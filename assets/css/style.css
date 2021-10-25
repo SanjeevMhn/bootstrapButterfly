@@ -1,0 +1,61 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Dosis', sans-serif; 
+}
+body::before{
+	content: "";
+	display: block;
+	height: 5.2rem;
+}
+.teamwork{
+	width: 28rem;
+}
+.video-content{
+	min-height: 25rem;
+	width: 25rem;
+}
+.list-icon{
+	height: 4rem;
+	width: 4rem;
+}
+.text-list{
+	list-style-type: none;
+}
+.about-continue{
+	background-image: url("../images/building2.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 2;
+}
+.about-continue .text-content{
+	z-index: 3;
+}
+
+.about-continue .blur-background{
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: radial-gradient(#e3fafc,#fff);
+	opacity: .7;
+	z-index: -1;
+}
+
+.about-continue-2 .container .row .col img{
+	filter: grayscale();
+	transition: all 200ms ease-in;
+}
+
+.about-continue-2 .container .row .col img:hover{
+	filter: none;
+	transform: scale(1.2);
+}
+.services{
+	background: #e3fafc;
+}
