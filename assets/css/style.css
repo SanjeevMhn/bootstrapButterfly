@@ -59,3 +59,17 @@ body::before{
 .services{
 	background: #e3fafc;
 }
+.wrapper{
+	background: red;
+}
+
+.services .container .row .col-4{
+	transition: all 400ms ease-in;
+	cursor: pointer;
+}
+.services .container .row .col-4:hover {
+	transform: translateY(-10px);
+}
+.services .container .row .col-4:hover .wrapper .inner-text h5{
+	color: skyblue;
+}
