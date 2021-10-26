@@ -56,7 +56,7 @@ body::before{
 	filter: none;
 	transform: scale(1.2);
 }
-.services{
+.services,.teams{
 	background: #e3fafc;
 }
 .wrapper{
@@ -72,4 +72,36 @@ body::before{
 }
 .services .container .row .col-4:hover .wrapper .inner-text h5{
 	color: skyblue;
+}
+.portfolio .container .options .opt{
+	cursor: pointer;
+}
+.reviews{
+	background: url("../images/reviews.jpg");
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+.reviews .filter-back{
+	background: #023f52;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: .7;
+}
+
+.member{
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	width: 80%;
+}
+
+.img{
+	width: 300%;
+	object-fit: cover;
+
 }
