@@ -9,6 +9,11 @@ body::before{
 	display: block;
 	height: 5.2rem;
 }
+
+nav{
+	box-shadow: 0 1px 35px lightgray;
+}
+
 .teamwork{
 	width: 28rem;
 }
@@ -100,8 +105,63 @@ body::before{
 	width: 80%;
 }
 
-.img{
-	width: 300%;
-	object-fit: cover;
+.social-links{
+	top: 11rem;
+}
 
+
+.icon-wrapper{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 300ms ease-in-out;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.col-3:hover .icon-wrapper{
+	transform: translateY(1rem);
+	opacity: 1;
+}
+
+.gallery .container .gallery-images .col-3 .img-wrapper{
+	pointer: cursor;
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery .container .gallery-images .col-3 .img-wrapper img{
+	transition: all 500ms ease-in-out;
+	cursor: pointer;
+}
+
+.gallery .container .gallery-images .col-3 .img-wrapper:hover >img{
+	transform: scale(1.15);
+}
+.icon{
+	height: 2rem;
+	width: 2rem;
+}
+
+.communication{
+	list-style-type: none;
+}
+
+.communication .communicate-data{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.communication .communicate-data .icon{
+	padding: 1.5rem;
+	height: 0.8rem;
+	width: 0.8rem;
+	border-radius: 50%;
+	background: lightblue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
