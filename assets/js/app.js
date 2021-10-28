@@ -96,33 +96,82 @@ function displaySlide(n){
 }
 
 //for hightlighting navigation links when the user scrolls to that particular section//
-//Note: find a better way of doing this//
 
-
+const navBar = document.querySelector(".main-nav");
+const about = document.querySelector(".about");
+const services = document.querySelector(".services");
+const portfolio = document.querySelector(".portfolio");
+const team = document.querySelector(".teams");
+const contact = document.querySelector(".contact");
 const navLinks = document.querySelectorAll(".nav-link");
+const backToTop = document.querySelector(".scrollTop-btn");
+
+let items = [about,services,portfolio,team,contact]
 
 window.addEventListener("scroll",()=>{
-	console.log(window.scrollY);
-	switch(window.scrollY){
-		case 408:
-			navLinks[1].classList.remove("text-dark");
-			navLinks[1].classList.add("text-primary");
-		break;
-		case 2040:
-			navLinks[2].classList.remove("text-dark");
-			navLinks[2].classList.add("text-primary");
-		break;
-		case 2652:
-			navLinks[3].classList.remove("text-dark");
-			navLinks[3].classList.add("text-primary");
-		break;	
-		case 4335:
-			navLinks[4].classList.remove("text-dark");
-			navLinks[4].classList.add("text-primary");
-		break;	
-		case 5559:
-			navLinks[6].classList.remove("text-dark");
-			navLinks[6].classList.add("text-primary");
-		break;			
+
+	if(window.scrollY > 0){
+		backToTop.style.display = "block"	
+	}else{
+		backToTop.style.display = "none";
 	}
+	items.forEach((it)=>{
+		if((window.scrollY+navBar.offsetHeight) >= ( it.offsetTop)){
+			
+			if(it.classList.contains('about')){
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[1].classList.remove('text-dark');
+				navLinks[1].classList.add('text-primary');
+			}else if(it.classList.contains('services')){
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[2].classList.remove('text-dark');
+				navLinks[2].classList.add('text-primary');
+			}else if(it.classList.contains('portfolio')){
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[3].classList.remove('text-dark');
+				navLinks[3].classList.add('text-primary');
+			}else if(it.classList.contains('teams')){
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[4].classList.remove('text-dark');
+				navLinks[4].classList.add('text-primary');
+			}else if(it.classList.contains('contact')){
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[6].classList.remove('text-dark');
+				navLinks[6].classList.add('text-primary');
+			}else{
+				navLinks.forEach((nav)=>{
+					nav.classList.remove('text-primary');
+					nav.classList.add('text-dark')
+				})
+				navLinks[0].classList.remove('text-dark');
+				navLinks[0].classList.add('text-primary');
+			}
+		}
+
+		if(window.scrollY == 0){
+			navLinks.forEach((nav)=>{
+				nav.classList.remove('text-primary');
+				nav.classList.add('text-dark')
+			})
+			navLinks[0].classList.remove('text-dark');
+			navLinks[0].classList.add('text-primary');
+		}
+		//console.log(it.offsetTop);
+	})
+
 })

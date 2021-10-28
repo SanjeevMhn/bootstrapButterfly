@@ -1,9 +1,20 @@
 html{
 	scroll-behavior: smooth;
+	scroll-padding-top: 5.2rem; /*nav height*/
 }
 body{
 	font-family: 'Dosis', sans-serif; 
+	position: relative;
 }
+.scrollTop-btn{
+	position: fixed;
+	right: 2rem;
+	bottom: 1rem;
+	padding: 1rem;
+	z-index: 10000000;
+	display: none;
+}
+
 body::before{
 	content: "";
 	display: block;
@@ -12,6 +23,10 @@ body::before{
 
 nav{
 	box-shadow: 0 -45px 80px 1px #000;
+}
+
+nav .container .navbar-nav .nav-item .nav-link{
+	transition: all 200ms ease-in;
 }
 
 .teamwork{
@@ -24,6 +39,14 @@ nav{
 .list-icon{
 	height: 4rem;
 	width: 4rem;
+	color: blue;
+}
+.list-icon:hover{
+
+	background-color:dodgerblue;
+}
+.list-icon:hover .bi{
+	color: white;
 }
 .text-list{
 	list-style-type: none;
