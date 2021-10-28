@@ -10,9 +10,15 @@ body{
 	position: fixed;
 	right: 2rem;
 	bottom: 1rem;
-	padding: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 10px;
 	z-index: 10000000;
 	display: none;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 1.25rem;
 }
 
 body::before{
@@ -39,7 +45,7 @@ nav .container .navbar-nav .nav-item .nav-link{
 .list-icon{
 	height: 4rem;
 	width: 4rem;
-	color: blue;
+	color: dodgerblue;
 }
 .list-icon:hover{
 
@@ -164,10 +170,7 @@ nav .container .navbar-nav .nav-item .nav-link{
 .gallery .container .gallery-images .col-3 .img-wrapper:hover >img{
 	transform: scale(1.15);
 }
-.icon{
-	height: 2rem;
-	width: 2rem;
-}
+
 
 .communication{
 	list-style-type: none;
@@ -182,7 +185,15 @@ nav .container .navbar-nav .nav-item .nav-link{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color:dodgerblue;
+	transition: all 400ms ease-in;
 }
+
+.icon:hover{
+	background:dodgerblue;
+	color: #fff;
+}
+
 .news-letter-email{
 	width: 25rem;
 }
@@ -190,7 +201,8 @@ nav .container .navbar-nav .nav-item .nav-link{
 	list-style-type: none;
 }
 
-.light-box-modal{
+.light-box-modal,
+.light-box-modal-2{
 	width: 100%;
 	height: 100%;
 	position: fixed;
@@ -201,51 +213,130 @@ nav .container .navbar-nav .nav-item .nav-link{
 	overflow: auto;
 	top: 0;
 	left: 0;
-	z-index: 100000;
+	z-index: 10000000;
+}
+.light-box-modal{
 	display: none;
+}
+.light-box-modal-2{
+	display: none;
+}
+.light-box-modal .modal-images,
+.light-box-modal-2 .modal-images-portfolio{
+	text-align: center;
+	width: 60%;
+	height: 75%;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 5.5rem;
 }
 
 .light-box-modal .modal-images{
-	text-align: center;
-	width: 60%;
-	overflow: hidden;
-	margin: 0 auto;
-	margin-top: 5rem;
+	display: none;
+}
+.light-box-modal-2 .modal-images-portfolio{
+	display: none;
 }
 
-.light-box-modal .modal-images .slides{
-	overflow: hidden;
+.light-box-modal .modal-images .slides,
+.light-box-modal-2 .modal-images-portfolio .slides2{
+	overflow: auto;
 }
 
-.light-box-modal .modal-images .side-img{
+.light-box-modal .modal-images .side-img,
+.light-box-modal .modal-images-portfolio .side-img{
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 
 .light-box-modal .close-button,
 .light-box-modal .prev-btn,
-.light-box-modal .next-btn{
+.light-box-modal .next-btn,
+.light-box-modal-2 .close-button-2,
+.light-box-modal-2 .prev-btn2,
+.light-box-modal-2 .next-btn2{
 	position: absolute;
 	font-size: 3rem;
 	color: #fff;
 	cursor: pointer;
 }
 
-.light-box-modal .close-button{
+.light-box-modal .close-button,
+.light-box-modal-2 .close-button-2{
 	top: 1rem;
 	right: 2rem;
 }
 
 .light-box-modal .prev-btn,
-.light-box-modal .next-btn{
-	top: 50%;
+.light-box-modal .next-btn,
+.light-box-modal-2 .prev-btn2,
+.light-box-modal-2 .next-btn2{
+	top: 45%;
 }
 
-.light-box-modal .prev-btn{
+.light-box-modal .prev-btn,
+.light-box-modal-2 .prev-btn2{
 	left: 5rem;
 }
 
-.light-box-modal .next-btn{
+.light-box-modal .next-btn,
+.light-box-modal-2 .next-btn2{
 	right: 5rem;
 }
+
+.portfolio-wrapper{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio-wrapper:hover .portfolio-links{
+	width: 100%;
+	height: 100%;
+	opacity: .8;
+}
+
+.portfolio-wrapper .portfolio-links{
+	width: 70%;
+	height: 70%;
+	position: absolute;
+	background-color: #fff;
+	opacity: 0;
+	display: flex;
+	transition: all 600ms ease-in-out;
+	align-items: center;
+	justify-content: center;
+} 
+
+.portfolio-wrapper .portfolio-links::before{
+	content: " ";
+	display: block;
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	height: 2rem;
+	width: 2rem;
+	z-index: 100;
+}
+.portfolio-wrapper .portfolio-links::after{
+	content: " ";
+	display: block;
+	border-bottom: 3px solid black;
+	border-right: 3px solid black;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	height: 2rem;
+	width: 2rem;
+	z-index: 100;
+}
+
+.portfolio-wrapper .portfolio-links .modalView{
+	color: skyblue;
+	cursor: pointer;
+}
+

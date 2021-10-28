@@ -46,18 +46,37 @@ function removeSelection(){
 	})
 }
 
-//for lightbox modal gallery of gallery section
+//for lightbox modal gallery of gallery section//
+//TODO: Please implement a better way of doing this 
 const modal = document.getElementById("lightboxModal");
+const modal2 = document.getElementById("lightboxModal-2");
+const modalImages  = document.querySelector(".modal-images");
+const modalImagesPortfolio  = document.querySelector(".modal-images-portfolio");
 const slides = document.querySelectorAll(".slides");
+const slides2 = document.querySelectorAll(".slides2");
 const nextBtn = document.querySelector(".next-btn");
 const prevBtn = document.querySelector(".prev-btn");
+const nextBtn2 = document.querySelector(".next-btn2");
+const prevBtn2 = document.querySelector(".prev-btn2");
 const closeBtn = document.querySelector(".close-button");
+const closeBtn2 = document.querySelector(".close-button-2");
 const galleryImages = document.querySelectorAll(".galleryImgs");
+const portfolioImages = document.querySelectorAll(".modalView");
+
 
 galleryImages.forEach((img,index)=>{
 	img.addEventListener("click",function(){
 		modal.style.display = "block";
-		displaySlide(slideIndex = index + 1);
+		modalImages.style.display = "block";
+		displaySlide(slides,slideIndex = index + 1);
+	})
+})
+
+portfolioImages.forEach((img,index)=>{
+	img.addEventListener("click",function(){
+		modal2.style.display = "block";
+		modalImagesPortfolio.style.display = "block";
+		displaySlide(slides2,slideIndex = index + 1);
 	})
 })
 
@@ -65,21 +84,33 @@ closeBtn.addEventListener("click", function(){
 	modal.style.display = "none";
 });
 
+closeBtn2.addEventListener("click", function(){
+	modal2.style.display = "none";
+});
+
 nextBtn.addEventListener("click", function(){
-	nextSlide(1)
+	nextSlide(slides,1)
 })
 
 prevBtn.addEventListener("click", function(){
-	nextSlide(-1)
+	nextSlide(slides,-1)
 })
 
-function nextSlide(n){
-	displaySlide(slideIndex += n)
+nextBtn2.addEventListener("click", function(){
+	nextSlide(slides2,1)
+})
+
+prevBtn2.addEventListener("click", function(){
+	nextSlide(slides2,-1)
+})
+
+function nextSlide(sli,n){
+	displaySlide(sli,slideIndex += n)
 }
 
 var slideIndex = 1;
 
-function displaySlide(n){
+function displaySlide(sli,n){
 
 	if(n > slides.length){
 		slideIndex = 1;
@@ -87,11 +118,11 @@ function displaySlide(n){
 	if(n < 1){
 		slideIndex = slides.length;
 	}
-	slides.forEach((slide,index)=>{
+	sli.forEach((slide,index)=>{
 		slide.style.display = "none";
 	});
 
-	slides[slideIndex - 1].style.display = "block";
+	sli[slideIndex - 1].style.display = "block";
 
 }
 
@@ -111,7 +142,7 @@ let items = [about,services,portfolio,team,contact]
 window.addEventListener("scroll",()=>{
 
 	if(window.scrollY > 0){
-		backToTop.style.display = "block"	
+		backToTop.style.display = "flex"	
 	}else{
 		backToTop.style.display = "none";
 	}
