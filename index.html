@@ -15,7 +15,7 @@
 			<a href="#" class="scrollTop-btn bg-primary">
 				<i class="bi bi-arrow-up"></i>
 			</a>
-			<nav class="navbar navbar-white navbar-expand-sm bg-white fixed-top main-nav">
+			<nav class="navbar navbar-white navbar-expand-lg bg-white fixed-top main-nav">
 				<div class="container">
 					
 					<a href="#" class="navbar-brand">
@@ -25,67 +25,48 @@
 						<span class="bi bi-list"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="collapseNavbar">
-						<ul class="navbar-nav text-left d-md-none d-lg-none">
-							<li class="nav-item">
-								<a href="#" class="nav-link">Home</a>
+						<ul class="navbar-nav ml-auto d-lg-flex flex-lg-row flex-sm-column font-weight-bold h6 text-uppercase">
+							<li class="nav-item p-2 m-2">
+								<a href="#" class="nav-link text-primary ">Home</a>
 							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">About</a>
+							<li class="nav-item p-2 m-2">
+								<a href="#about" class="nav-link text-dark">About</a>
 							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">Serices</a>
+							<li class="nav-item p-2 m-2">
+								<a href="#services" class="nav-link text-dark">Services</a>
 							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">Team</a>
+							<li class="nav-item p-2 m-2">
+								<a href="#portfolio" class="nav-link text-dark">Porfolio</a>
 							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">Dropdown</a>
+							<li class="nav-item p-2 m-2">
+								<a href="#team" class="nav-link text-dark">Team</a>
 							</li>
-							<li class="nav-item">
-								<a href="#" class="nav-link">Contact</a>
+							<li class="nav-item p-2 m-2 position-relative">
+								<a href="#" class="nav-link dropdown-toggle text-dark" id="dropdownMenuLink" data-toggle="dropdown">Drop Down
+									<!-- <i class="bi bi-chevron-down"></i> -->
+								</a>
+								<div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
+									<a href="#" class="dropdown-item text-dark">Drop Down 1</a>
+									<a href="#" class="dropdown-item text-dark">Drop Down 2</a>
+									<a href="#" class="dropdown-item text-dark">Drop Down 3</a>
+									<a href="#" class="dropdown-item text-dark">Drop Down 4</a>
+									<a href="#" class="dropdown-item text-dark">Drop Down 5</a>
+								</div>
+							</li>
+							<li class="nav-item pt-2 pl-2 pb-2 pr-0 mt-2 ml-2 mb-2 mr-0">
+								<a href="#contact" class="nav-link text-dark">Contact</a>
 							</li>
 						</ul>
 					</div>
-					<ul class="navbar-nav ml-auto d-md-flex d-lg-flex flex-row font-weight-bold h6 text-uppercase">
-						<li class="nav-item p-2 m-2">
-							<a href="#" class="nav-link text-primary ">Home</a>
-						</li>
-						<li class="nav-item p-2 m-2">
-							<a href="#about" class="nav-link text-dark">About</a>
-						</li>
-						<li class="nav-item p-2 m-2">
-							<a href="#services" class="nav-link text-dark">Services</a>
-						</li>
-						<li class="nav-item p-2 m-2">
-							<a href="#portfolio" class="nav-link text-dark">Porfolio</a>
-						</li>
-						<li class="nav-item p-2 m-2">
-							<a href="#team" class="nav-link text-dark">Team</a>
-						</li>
-						<li class="nav-item p-2 m-2 position-relative">
-							<a href="#" class="nav-link dropdown-toggle text-dark" id="dropdownMenuLink" data-toggle="dropdown">Drop Down
-								<!-- <i class="bi bi-chevron-down"></i> -->
-							</a>
-							<div class="dropdown-menu position-absolute" aria-labelledby="dropdownMenuLink">
-								<a href="#" class="dropdown-item text-dark">Drop Down 1</a>
-								<a href="#" class="dropdown-item text-dark">Drop Down 2</a>
-								<a href="#" class="dropdown-item text-dark">Drop Down 3</a>
-								<a href="#" class="dropdown-item text-dark">Drop Down 4</a>
-								<a href="#" class="dropdown-item text-dark">Drop Down 5</a>
-							</div>
-						</li>
-						<li class="nav-item pt-2 pl-2 pb-2 pr-0 mt-2 ml-2 mb-2 mr-0">
-							<a href="#contact" class="nav-link text-dark">Contact</a>
-						</li>
-					</ul>
+					
 				</div>
 			</nav>
 				
 			<section class="p-5 bg-light text-dark">
-				<div class="container d-flex flex-row align-items-center">
-					<div class="text-content w-50 my-4">
-						<h1 class="text-uppercase font-weight-bold text-left">Create Websites that make you stop & stare</h1>
-						<p class="text-uppercase text-muted font-weight-bold">
+				<div class="container d-flex flex-lg-row align-items-lg-center flex-md-column-reverse  align-items-md-center justify-content-md-center flex-sm-column-reverse  align-items-sm-center justify-content-sm-center">
+					<div class="text-content my-4 d-flex flex-sm-column justify-content-md-start align-items-sm-center justify-content-sm-center">
+						<h1 class="text-uppercase font-weight-bold text-lg-left text-sm-center">Create Websites that make you stop & stare</h2>
+						<p class="text-uppercase text-sm-center text-lg-left text-muted font-weight-bold">
 							Lorem ipsum dolor sit amet consectetur adipisicing, elit. Dignissimos laboriosam non tempore alias deserunt, molestiae sint voluptate. Reiciendis, sit, quidem?								
 						</p>
 						<button class="btn btn-primary text-light px-4 text-center py-1">
@@ -97,12 +78,12 @@
 			</section>
 		
 			<section class="about py-5 bg-white text-dark" id="about">
-				<div class="container d-flex flex-row align-items-center">
-					<video class="video-content mr-5" controls loading="lazy">
+				<div class="container d-flex flex-lg-row flex-sm-column align-items-lg-center">
+					<video class="video-content mr-5 img-fluid" controls loading="lazy">
 						<source src="./assets/images/office.mp4" type="video/mp4">
 					</video>
 					<div class="text-content">
-						<h2 class="font-weight-bold">Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</h2>
+						<h2 class="font-weight-bold text-sm-center">Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</h2>
 						<p class="h5 font-weight-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque perferendis, repudiandae animi amet nam ea quos commodi minima magni ipsam, expedita laborum assumenda reprehenderit nobis voluptatum. Ratione natus ad sequi nam suscipit possimus odio aperiam magni? Nostrum, numquam eligendi perferendis!</p>
 						<ul class="text-list mt-4 px-0">
 							<li class="list-item d-flex flex-row align-items-center justify-content-between my-5">
@@ -141,20 +122,21 @@
 				<div class="text-content text-center">
 					<div class="h1 font-weight-bold">What we have achieved so far</div>
 					<p class="h6">Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Nihil, ex repellendus dicta ipsa tenetur laudantium.</p>
-					<div class="d-flex flex-row align-items-center justify-content-between mt-5 w-75 mx-auto">
-						<div class="clients text-center">
+					<!-- <div class="d-flex flex-lg-row flex-sm-column align-items-center justify-content-between mt-5 w-75 mx-auto"> -->
+					<div class="row mt-5 w-75 mx-auto">
+						<div class="clients text-center col-lg-3 col-sm-6">
 							<div class="h1 text-primary font-weight-bold rndNumbers">232</div>
 					   	<p>Clients</p>	
 						</div>
-						<div class="clients text-center ">
+						<div class="clients text-center col-lg-3 col-sm-6">
 							<div class="h1 text-primary font-weight-bold rndNumbers">521</div>
 					   	<p>Projects</p>	
 						</div>
-						<div class="clients text-center">
+						<div class="clients text-center col-lg-3 col-sm-6">
 							<div class="h1 text-primary font-weight-bold rndNumbers">1468</div>
 					   	<p>Hours of Support</p>	
 						</div>
-						<div class="clients text-center">
+						<div class="clients text-center col-lg-3 col-sm-6">
 							<div class="h1 text-primary font-weight-bold rndNumbers">15</div>
 					   	<p>Hard Workers</p>	
 						</div>
@@ -166,30 +148,30 @@
 			<section class="about-continue-2 p-5">
 				<div class="container d-flex flex-column align-items-center justify-content-center">
 					<div class="row">
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center ">	
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">	
 							<img src="./assets/images/clients/client-1.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-2.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-3.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-4.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-					</div>
-					<div class="row">
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+			<!-- 		</div>
+					<div class="row"> -->
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-5.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-6.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-7.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
-						<div class="col p-5 d-flex flex-row justify-content-center align-items-center">
+						<div class="col-lg-3 col-md-4 col-sm-6 p-5 d-flex flex-row justify-content-center align-items-center">
 							<img src="./assets/images/clients/client-8.png" alt="" srcset="" class="img-fluid w-50" loading="lazy">
 						</div>
 					</div>
@@ -205,7 +187,7 @@
 					</div>	
 					<div class="row mt-4">
 
-						<div class="col-4 mb-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-cash-stack display-3 text-danger ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -215,7 +197,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-archive display-3 text-warning ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -225,7 +207,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-chat-text display-3 text-info ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -235,7 +217,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-card-text display-3 text-success ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -245,7 +227,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-globe display-3 text-success ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -255,7 +237,7 @@
 							</div>
 						</div>
 
-						<div class="col-4">
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
 							<div class="wrapper p-4 bg-light border border-transparent rounded d-flex align-items-center justify-content-center overflow-hidden">
 								<i class="icon-small bi bi-clock display-3 text-primary ml-n5 mr-4"></i>
 								<div class="inner-text">
@@ -273,15 +255,14 @@
 				<div class="container text-center">
 					<div class="h1 font-weight-bold text-uppercase">portfolio</div>
 					<p class="font-weight-normal h5">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Maxime, eligendi expedita eum, nemo, mollitia veniam possimus iure nam cum perferendis, laborum. Harum, consequuntur minima laudantium tenetur? Dolorem esse temporibus, voluptatem.</p>
-					<div class="row options w-25 mx-auto mt-5 mb-4 h6 font-weight-bold">
-						<div class="col-3 opt text-uppercase text-primary">All</div>
-						<div class="col-3 opt text-uppercase">App</div>
-						<div class="col-3 opt text-uppercase">Card</div>
-						<div class="col-3 opt text-uppercase">Web</div>
+					<div class="d-flex flex-row align-items-center justify-content-center options mt-5 mb-4 h6 font-weight-bold">
+						<div class="opt text-uppercase mx-4 text-primary">All</div>
+						<div class="opt text-uppercase mx-4">App</div>
+						<div class="opt text-uppercase mx-4">Card</div>
+						<div class="opt text-uppercase mx-4">Web</div>
 					</div> 
-
 					<div class="row mb-4">
-						<div class="col-4 mb-4 app">
+						<div class="col-lg-4 col-md-6 mb-4 app">
 							<div class="portfolio-wrapper w-100 overflow-hidden w-100 h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -296,7 +277,7 @@
 								<img src="./assets/images/portfolio/port1.jpg" class="img-fluid w-100 portImgs" alt="" loading="lazy">
 							</div>
 						</div>
-						<div class="col-4 mb-4 app">
+						<div class="col-lg-4 col-md-6 mb-4 app">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -311,7 +292,7 @@
 								<img src="./assets/images/portfolio/port2.jpg" class="img-fluid portImgs" alt="" loading="lazy">
 							</div>
 						</div>
-						<div class="col-4 mb-4 app">
+						<div class="col-lg-4 col-md-6 mb-4 app">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -329,7 +310,7 @@
 				<!-- 	</div>
 
 					<div class="row mb-4"> -->
-						<div class="col-4 mb-4 cards">
+						<div class="col-lg-4 col-md-6 mb-4 cards">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -345,7 +326,7 @@
 								
 							</div>
 						</div>
-						<div class="col-4 mb-4 cards">
+						<div class="col-lg-4 col-md-6 mb-4 cards">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -361,7 +342,7 @@
 								
 							</div>
 						</div>
-						<div class="col-4 mb-4 cards">
+						<div class="col-lg-4 col-md-6 mb-4 cards">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -380,7 +361,7 @@
 				<!-- 	</div>	
 
 					<div class="row mb-4">	 -->
-						<div class="col-4 mb-4 web">
+						<div class="col-lg-4 col-md-6 mb-4 web">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -395,7 +376,7 @@
 								<img src="./assets/images/portfolio/port7.jpg" class="img-fluid h-100 portImgs" alt="" loading="lazy">
 							</div>
 						</div>
-						<div class="col-4 mb-4 web">
+						<div class="col-lg-4 col-md-6 mb-4 web">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -410,7 +391,7 @@
 								<img src="./assets/images/portfolio/port8.jpg" class="img-fluid h-100 portImgs" alt="" loading="lazy">
 							</div>
 						</div>
-						<div class="col-4 mb-4 web">
+						<div class="col-lg-4 col-md-6 mb-4 web">
 							<div class="portfolio-wrapper w-100 overflow-hidden h-100">
 								<div class="portfolio-links">
 									<div class="text-content">
@@ -538,7 +519,7 @@
 						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est nobis reprehenderit, pariatur, temporibus sequi? Ad, vitae, voluptas delectus modi quis vel commodi a sapiente error voluptates praesentium temporibus unde.</p>
 					</div>
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 mb-3">
 							<div class="member w-100">
 								<div class="img-wrapper position-relative d-flex justify-content-center align-items-center">
 									<img src="./assets/images/team/team-1.jpg" alt="" class="img-fluid w-100" loading="lazy">
@@ -564,7 +545,7 @@
 							</div>
 						</div>
 
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 mb-3">
 							<div class="member w-100">
 								<div class="img-wrapper d-flex flex-row justify-content-center align-items-center">
 									<img src="./assets/images/team/team-2.jpg" alt="" class="img-fluid" loading="lazy">
@@ -590,7 +571,7 @@
 							</div>
 						</div>
 
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 mb-3">
 							<div class="member w-100">
 								<div class="img-wrapper d-flex flex-row justify-content-center align-items-center">
 									<img src="./assets/images/team/team-3.jpg" alt="" class="img-fluid" loading="lazy">
@@ -616,7 +597,7 @@
 							</div>
 						</div>
 
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 mb-3">
 							<div class="member w-100">
 								<div class="img-wrapper d-flex flex-row justify-content-center align-items-center">
 									<img src="./assets/images/team/team-4.jpg" alt="" class="img-fluid" loading="lazy">
@@ -654,42 +635,42 @@
 						<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing, elit. Facilis voluptates eaque, neque consequatur excepturi harum, fuga molestias repellendus perferendis ut, odio eos perspiciatis praesentium nisi asperiores officia obcaecati? Nostrum, quas?</p>
 					</div>
 					<div class="gallery-images row">
-						<div class="col-3 member mb-1">
+						<div class="col-lg-3 col-md-4 member mb-1">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery1.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery9.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery3.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery4.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery5.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery6.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery7.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
 						</div>
-						<div class="col-3 member">
+						<div class="col-lg-3 col-md-4 member">
 							<div class="img-wrapper galleryImgs">
 								<img src="./assets/images/gallery/gallery8.jpg" alt="" srcset="" class="img-fluid" loading="lazy">
 							</div>
@@ -710,7 +691,7 @@
 					</div>	
 
 					<div class="row my-4">
-						<div class="col-5">
+						<div class="col-lg-5 col-sm-12">
 							<!-- <div class="member border border-warning"> -->
 								<div class="row inner-grid">
 									<div class="col-12 mb-4">
@@ -749,7 +730,7 @@
 								</div>
 							<!-- </div> -->
 						</div>
-						<div class="col-7 text-center">
+						<div class="col-lg-7 col-sm-12 text-center mt-sm-5 mt-md-5 mt-lg-0">
 							<!-- <div class="member"> -->
 								<form action="#" class="contact-form">	
 									<div class="row">
@@ -799,7 +780,7 @@
 			<section class="useful-links py-5">
 				<div class="container">
 					<div class="row">
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="member">
 								<div class="h2">Butterfly</div>
 								<p class="address mb-4">
@@ -813,7 +794,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="member">
 								<h6 class="font-weight-bold">Useful Links</h6>
 								<ul class="link-list px-1 py-2 d-flex flex-column align-items-start">
@@ -840,7 +821,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="member">
 								<h6 class="font-weight-bold">Our Services</h6>
 								<ul class="link-list px-1 py-2 d-flex flex-column align-items-start">
@@ -867,7 +848,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="col-3">
+						<div class="col-lg-3 col-md-6 col-sm-12">
 							<div class="member">
 								<h6 class="font-weight-bold">Our Social Networks</h6>
 								<p>Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Ipsam, quos.</p>

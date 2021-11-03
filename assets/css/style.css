@@ -21,6 +21,10 @@ body{
 	font-size: 1.25rem;
 }
 
+.main-nav{
+	min-height:  5.2rem;
+}
+
 body::before{
 	content: "";
 	display: block;
